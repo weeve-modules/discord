@@ -3,7 +3,7 @@
 |                |                                       |
 | -------------- | ------------------------------------- |
 | Name           | Discord                           |
-| Version        | v0.0.0                                |
+| Version        | v1.0.0                                |
 | DockerHub | [weevenetwork/discord](https://hub.docker.com/r/weevenetwork/discord) |
 | authors        | Jakub Grzelak                    |
 
@@ -29,7 +29,7 @@ The following module configurations can be provided in a data service designer s
 | Name                 | Environment Variables     | type     | Description                                              |
 | -------------------- | ------------------------- | -------- | -------------------------------------------------------- |
 | Webhook URL    | DISCORD_WEBHOOK_URL         | string   | Webhook URL of Discord channel where messages will be sent.            |
-| Message Label    | MESSAGE_LABEL         | integer  | Label in incoming data that holds the message to be sent.            |
+| Message Label    | MESSAGE_LABEL         | string  | Label in incoming data that holds the message to be sent.            |
 
 
 ### Set by the weeve Agent on the edge-node
