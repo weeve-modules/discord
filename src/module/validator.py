@@ -34,7 +34,7 @@ def data_validation(data: any) -> str:
             return f"Detected type: {type(data)} | Supported types: {allowed_data_types} | invalid!"
 
         if not os.getenv("MESSAGE_LABEL") in data.keys():
-            return f"Provided message label ({os.getenv('MESSAGE_LABEL')}) is not in the received data. Received labels: {data.keys()}"
+            return f"Provided message label ({os.getenv('MESSAGE_LABEL')}) is not in the received data. Received labels: {list(data.keys())}"
 
         return None
 
